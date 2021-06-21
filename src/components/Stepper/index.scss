@@ -1,0 +1,50 @@
+.stepper {
+    display: flex;
+    flex-direction: column;
+    .stepper-item {
+      position: relative;
+      margin: 2rem 0rem;
+      display: flex;
+      align-items: center;
+  
+      .stepper-item-dot {
+        border-radius: 50%;
+        padding: .5rem 1rem;
+        color: white;
+        font-weight: 700;
+        width: fit-content;
+        margin-right: 5px;
+      }
+  
+      .stepper-item-dot.completed {
+        background-color: #3abb69;
+      }
+  
+      .stepper-item-dot.inprogress {
+        background-color: #0d2461;
+      }
+  
+      .stepper-item-dot.pending {
+        color: #0d2461;
+        border: 1px solid #7a7b86;
+      }
+  
+      .stepper-item-name {
+        font-size: 13px;
+      }
+  
+      &:not(:last-child)::before {
+        display: block;
+        position: absolute;
+        content: "";
+        border: 1px solid #7a7b86;
+        top: 100%;
+        height: 4rem;
+        left: 1.3rem;
+      }
+    }
+    @media only screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+  

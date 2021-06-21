@@ -1,12 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Polymath Techinical Challenge`,
+    description: `Polymath Labs developer technical skills assessment challenge
+    It is important for us to understand where and how we can position you within the Polymath Labs organization, should we decide to have you join us. 
+    By you developing and presenting this sample application, you will help us establish your level (Junior, Intermediate, Expert). 
+    You are expected to produce original work, but you are free to use all resources available to you on the Internet to help guide your decisions.`,
+    author: `@nziranziza`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

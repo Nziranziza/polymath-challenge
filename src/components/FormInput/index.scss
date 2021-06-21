@@ -1,0 +1,13 @@
+.form-input {
+  margin-bottom: 20px;
+  label {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  .required-marker {
+    color: red;
+  }
+  h6, label:first-child {
+    color: #0d2461;
+  }
+}
